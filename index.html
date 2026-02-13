@@ -3,152 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inheritability.com | Premium Digital Asset</title>
+    <title>Inheritability.com | Institutional Digital Asset</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0c10; color: #e5e7eb; }
+        body { font-family: 'Inter', sans-serif; background-color: #0d0f14; color: #e5e7eb; scroll-behavior: smooth; }
         .serif { font-family: 'Playfair Display', serif; }
-        .gradient-text { background: linear-gradient(90deg, #c5a059, #f9dfa5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
-        .hero-bg { background: radial-gradient(circle at top right, #1a1d24, #0a0c10); }
+        .glass { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(12px); }
+        .accent-gold { color: #d4af37; }
+        .bg-gold { background-color: #d4af37; }
+        .hover-gold:hover { background-color: #bfa030; }
     </style>
 </head>
 <body>
 
-    <header class="py-6 px-8 border-b border-gray-800 sticky top-0 bg-black/80 z-50">
+    <header class="py-6 px-8 border-b border-gray-800 sticky top-0 bg-[#0d0f14]/90 z-50">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter">INHERITABILITY<span class="text-[#c5a059]">.COM</span></div>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
-                <a href="#sectors" class="hover:text-[#c5a059] transition">SECTORS</a>
-                <a href="#analysis" class="hover:text-[#c5a059] transition">MARKET DATA</a>
-                <a href="#valuation" class="hover:text-[#c5a059] transition">VALUATION</a>
-            </nav>
-            <a href="#inquiry" class="bg-[#c5a059] text-black px-6 py-2 rounded-sm font-bold text-sm hover:bg-[#b08d48] transition">ACQUIRE ASSET</a>
+            <div class="text-2xl font-bold tracking-tighter italic serif">INHERITABILITY<span class="accent-gold">.com</span></div>
+            <div class="hidden lg:flex space-x-10 text-xs font-semibold tracking-widest text-gray-400">
+                <a href="#market" class="hover:text-white transition">MARKET DATA</a>
+                <a href="#use-cases" class="hover:text-white transition">APPLICATIONS</a>
+                <a href="#comparables" class="hover:text-white transition">COMPARABLES</a>
+            </div>
+            <div class="flex gap-4">
+                <a href="https://wa.me/250788660513" class="hidden sm:block border border-green-600 text-green-500 px-5 py-2 rounded text-xs font-bold hover:bg-green-600 hover:text-white transition">WHATSAPP</a>
+                <a href="#make-offer" class="bg-gold text-black px-6 py-2 rounded font-bold text-xs hover-gold transition">MAKE AN OFFER</a>
+            </div>
         </div>
     </header>
 
-    <section class="hero-bg py-24 px-8 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-[#c5a059] font-semibold tracking-[0.2em] mb-4">PREMIUM CATEGORY DOMAIN</h2>
-            <h1 class="serif text-5xl md:text-7xl mb-6">Where Legacy Meets Future.</h1>
-            <p class="text-xl text-gray-400 mb-10 leading-relaxed">
-                A definitive digital asset at the intersection of <strong>Multigenerational Wealth</strong> and <strong>Biological Science</strong>. 
-                Own the term that defines the transfer of value across generations.
+    <section class="relative py-28 px-8 text-center overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/10 via-transparent to-transparent -z-10"></div>
+        <div class="max-w-5xl mx-auto">
+            <span class="text-xs font-black tracking-[0.4em] accent-gold uppercase mb-6 block">Ultra-Premium Category-Defining Asset</span>
+            <h1 class="serif text-6xl md:text-8xl mb-8 leading-tight">Mastering the <br><span class="italic">Future of Legacy.</span></h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-12">
+                Own the global gateway for <strong>Estate Planning</strong>, <strong>Wealth Continuity</strong>, and <strong>Biological Heredity</strong>. 
+                A rare dictionary .com bridging the physical, digital, and genetic worlds.
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <div class="px-8 py-4 glass-card rounded-lg">
-                    <span class="block text-xs text-gray-500 uppercase tracking-widest">Primary Focus</span>
-                    <span class="text-lg font-semibold italic">Estate & Wealth Tech</span>
-                </div>
-                <div class="px-8 py-4 glass-card rounded-lg">
-                    <span class="block text-xs text-gray-500 uppercase tracking-widest">Secondary Focus</span>
-                    <span class="text-lg font-semibold italic">Genetics & Heredity</span>
-                </div>
-            </div>
         </div>
     </section>
 
-    <section id="sectors" class="py-20 px-8 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="p-10 border-l-2 border-[#c5a059] bg-gradient-to-r from-white/5 to-transparent">
-                <h3 class="serif text-3xl mb-4">01. Legal & Financial</h3>
-                <p class="text-gray-400 mb-6 italic">"The capacity for assets and rights to be legally transferred."</p>
-                <ul class="space-y-3 text-sm">
-                    <li>• AI-Driven Estate Planning</li>
-                    <li>• Digital Asset Continuity</li>
-                    <li>• Multigenerational Trust Services</li>
-                    <li>• Family Office Management</li>
-                </ul>
-            </div>
-            <div class="p-10 border-l-2 border-blue-400 bg-gradient-to-r from-white/5 to-transparent">
-                <h3 class="serif text-3xl mb-4">02. Biological & Science</h3>
-                <p class="text-gray-400 mb-6 italic">"The genetic transmission of traits across generations."</p>
-                <ul class="space-y-3 text-sm">
-                    <li>• Genomic Health Diagnostics</li>
-                    <li>• Hereditary Trait Research</li>
-                    <li>• Longevity & Biotech SaaS</li>
-                    <li>• Ancestry & Genealogy Platforms</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="analysis" class="py-20 bg-[#0f1115] px-8">
+    <section id="comparables" class="py-20 px-8 bg-black/40">
         <div class="max-w-6xl mx-auto">
-            <h2 class="serif text-4xl mb-12 text-center">Strategic Market Positioning</h2>
-            <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse glass-card">
+            <div class="mb-12">
+                <h2 class="serif text-3xl mb-2">Market Benchmark Analysis</h2>
+                <p class="text-gray-500 text-sm italic">Publicly reported dictionary .com and industry-adjacent sales (2024-2026).</p>
+            </div>
+            <div class="overflow-x-auto glass rounded-xl">
+                <table class="w-full text-left">
                     <thead>
-                        <tr class="border-b border-gray-800">
-                            <th class="p-6 text-gray-400 font-medium">Metric</th>
-                            <th class="p-6 text-gray-400 font-medium">Market Relevance</th>
-                            <th class="p-6 text-gray-400 font-medium">Growth Potential</th>
+                        <tr class="border-b border-gray-800 text-xs uppercase tracking-widest text-gray-500">
+                            <th class="p-6">Domain Asset</th>
+                            <th class="p-6">Sale Price</th>
+                            <th class="p-6">Year / Sector</th>
                         </tr>
                     </thead>
                     <tbody class="text-sm">
-                        <tr class="border-b border-gray-800">
-                            <td class="p-6 font-bold">The Great Wealth Transfer</td>
-                            <td class="p-6">Est. $68 Trillion passing to heirs by 2045</td>
-                            <td class="p-6 text-green-400">Critical / High</td>
+                        <tr class="border-b border-gray-800 hover:bg-white/5 transition">
+                            <td class="p-6 font-bold">Midnight.com</td>
+                            <td class="p-6 accent-gold font-mono">$1,150,000</td>
+                            <td class="p-6 text-gray-400">2026 / Branding</td>
                         </tr>
-                        <tr class="border-b border-gray-800">
-                            <td class="p-6 font-bold">Search Intent</td>
-                            <td class="p-6">Exact Match Keyword for "Inheritability"</td>
-                            <td class="p-6 text-green-400">Institutional Authority</td>
+                        <tr class="border-b border-gray-800 hover:bg-white/5 transition">
+                            <td class="p-6 font-bold">Continue.com</td>
+                            <td class="p-6 accent-gold font-mono">$550,000</td>
+                            <td class="p-6 text-gray-400">2024 / Continuity</td>
                         </tr>
-                        <tr>
-                            <td class="p-6 font-bold">Biotech Integration</td>
-                            <td class="p-6">Genomic sequencing market CAGR of 19%</td>
-                            <td class="p-6 text-green-400">Explosive</td>
+                        <tr class="border-b border-gray-800 hover:bg-white/5 transition">
+                            <td class="p-6 font-bold">C4.com</td>
+                            <td class="p-6 accent-gold font-mono">$265,000</td>
+                            <td class="p-6 text-gray-400">2026 / Short-Generic</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-white/5 transition">
+                            <td class="p-6 font-bold">Speed.ai</td>
+                            <td class="p-6 accent-gold font-mono">$165,000</td>
+                            <td class="p-6 text-gray-400">2026 / AI-SaaS</td>
+                        </tr>
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="p-6 font-bold italic">Inheritability.com</td>
+                            <td class="p-6 italic text-blue-400 underline">Request Valuation</td>
+                            <td class="p-6 text-gray-400 italic">Target: Legal/Bio Hybrid</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+            <p class="mt-6 text-xs text-center text-gray-600 italic">"The value of a dictionary domain lies in its instant trust and institutional gravity." — Domain Market Advisory</p>
         </div>
     </section>
 
-    <section id="valuation" class="py-20 px-8 text-center max-w-4xl mx-auto">
-        <h2 class="serif text-4xl mb-6">Asset Evaluation</h2>
-        <div class="grid md:grid-cols-3 gap-6 mb-12">
-            <div class="p-6 glass-card">
-                <div class="text-[#c5a059] text-2xl mb-2 font-bold">14</div>
-                <div class="text-xs uppercase tracking-widest text-gray-500">Characters</div>
+    <section id="use-cases" class="py-24 px-8 max-w-7xl mx-auto">
+        <h2 class="serif text-4xl mb-16 text-center">Unrivaled Deployment Potential</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-8 glass rounded-2xl">
+                <div class="w-12 h-12 bg-gold/20 flex items-center justify-center rounded-lg mb-6">🏛️</div>
+                <h3 class="text-xl font-bold mb-4">The Great Wealth Transfer</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">Position your brand as the leader in the $68 trillion intergenerational wealth transfer. Perfect for family offices, trust-tech, and automated probate SaaS.</p>
             </div>
-            <div class="p-6 glass-card">
-                <div class="text-[#c5a059] text-2xl mb-2 font-bold">.COM</div>
-                <div class="text-xs uppercase tracking-widest text-gray-500">Extension</div>
+            <div class="p-8 glass rounded-2xl border-blue-500/20">
+                <div class="w-12 h-12 bg-blue-500/20 flex items-center justify-center rounded-lg mb-6">🧬</div>
+                <h3 class="text-xl font-bold mb-4">Precision Bio-Genetics</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">In biological terms, inheritability is the core metric of genetic trait transmission. This is a Tier-1 brand for genomic sequencing and biotech research.</p>
             </div>
-            <div class="p-6 glass-card">
-                <div class="text-[#c5a059] text-2xl mb-2 font-bold">Dictionary</div>
-                <div class="text-xs uppercase tracking-widest text-gray-500">Status</div>
+            <div class="p-8 glass rounded-2xl border-purple-500/20">
+                <div class="w-12 h-12 bg-purple-500/20 flex items-center justify-center rounded-lg mb-6">🔗</div>
+                <h3 class="text-xl font-bold mb-4">Web3 & Digital Legacy</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">Ownership of digital assets requires institutional continuity. Inheritability.com is the ideal home for crypto-custody and digital executor services.</p>
             </div>
         </div>
-        <p class="text-gray-400 leading-relaxed mb-8">
-            The valuation of <strong>$75,000 USD</strong> is based on the scarcity of "Institutional Dictionary Domains" that bridge two trillion-dollar industries (Finance and Genetics). This is an "Appreciating Digital Land" asset.
-        </p>
     </section>
 
-    <section id="inquiry" class="py-24 px-8 bg-white text-black">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="serif text-4xl mb-4 text-center">Acquisition Inquiry</h2>
-            <p class="text-center text-gray-600 mb-10">Direct communication for Principals, CEOs, or Authorized Brokers.</p>
-            <form action="#" class="space-y-6">
+    <section id="make-offer" class="py-24 px-8 bg-white text-black rounded-t-[3rem]">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="serif text-5xl mb-4">Submit Acquisition Interest</h2>
+                <p class="text-gray-600 uppercase tracking-widest text-sm font-bold">Principals or Authorized Counsel Only</p>
+            </div>
+
+            <form id="offerForm" class="space-y-6">
                 <div class="grid md:grid-cols-2 gap-6">
-                    <input type="text" placeholder="Your Name" class="w-full p-4 border border-gray-300 rounded focus:border-black outline-none">
-                    <input type="email" placeholder="Corporate Email" class="w-full p-4 border border-gray-300 rounded focus:border-black outline-none">
+                    <div>
+                        <label class="block text-xs font-bold uppercase mb-2">Principal Name</label>
+                        <input type="text" id="name" required class="w-full p-4 border-b-2 border-gray-200 outline-none focus:border-black transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase mb-2">Corporate Entity</label>
+                        <input type="text" id="entity" required class="w-full p-4 border-b-2 border-gray-200 outline-none focus:border-black transition">
+                    </div>
                 </div>
-                <input type="text" placeholder="Representing Company / Fund" class="w-full p-4 border border-gray-300 rounded focus:border-black outline-none">
-                <textarea rows="4" placeholder="Your Offer or Intent (Floor: $75,000 USD)" class="w-full p-4 border border-gray-300 rounded focus:border-black outline-none"></textarea>
-                <button class="w-full bg-black text-white font-bold py-5 rounded hover:bg-gray-900 transition uppercase tracking-widest">Submit Acquisition Proposal</button>
+                
+                <div>
+                    <label class="block text-xs font-bold uppercase mb-2">Proposed Offer Range (USD)</label>
+                    <input type="text" id="offer" placeholder="e.g. $75,000+" class="w-full p-4 border-b-2 border-gray-200 outline-none focus:border-black transition font-mono text-xl">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase mb-2">Strategic Intent / Notes</label>
+                    <textarea id="intent" rows="4" class="w-full p-4 border-b-2 border-gray-200 outline-none focus:border-black transition" placeholder="How do you plan to utilize this asset?"></textarea>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <button type="submit" class="w-full bg-black text-white py-6 rounded-xl font-black uppercase tracking-widest hover:bg-gray-800 transition">
+                        Email Offer to Asset Management
+                    </button>
+                    <div class="text-center py-4 text-gray-400 font-bold uppercase text-xs">OR</div>
+                    <a href="https://wa.me/250788660513" class="w-full border-2 border-green-600 text-green-600 py-6 rounded-xl font-black uppercase tracking-widest hover:bg-green-600 hover:text-white transition text-center block">
+                        Quick Inquiry via WhatsApp
+                    </a>
+                </div>
             </form>
         </div>
     </section>
 
-    <footer class="py-12 px-8 border-t border-gray-800 text-center text-xs text-gray-500 tracking-[0.3em]">
-        <p>&copy; 2026 INHERITABILITY.COM | SECURED DIGITAL ASSET</p>
-        <p class="mt-4">TRANSFER VIA ESCROW.COM OR EQUIVALENT TRUSTED THIRD-PARTY</p>
+    <footer class="py-12 bg-black px-8 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-600 uppercase tracking-[0.3em]">
+            <div>© 2026 EliJul Asset Management</div>
+            <div class="my-4 md:my-0">Domain Transfer via Escrow.com Preferred</div>
+            <div>Institutional Grade .COM</div>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('offerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const entity = document.getElementById('entity').value;
+            const offer = document.getElementById('offer').value;
+            const intent = document.getElementById('intent').value;
+            
+            const subject = encodeURIComponent(`Acquisition Offer: Inheritability.com - ${entity}`);
+            const body = encodeURIComponent(`Name: ${name}\nCompany: ${entity}\nProposed Offer: ${offer}\n\nStrategic Intent:\n${intent}`);
+            
+            window.location.href = `mailto:sales@elijul.com?subject=${subject}&body=${body}`;
+        });
+    </script>
 
 </body>
 </html>
