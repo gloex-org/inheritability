@@ -1,133 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inheritability.com - Premium Domain for Legal & Genetic Branding</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    /* Reset & Base */
-    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-    body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #222; background-color: #f9f9f9; }
-
-    a { text-decoration: none; color: inherit; }
-    section { padding: 80px 20px; }
-    h1, h2, h3 { color: #1a1a1a; }
-
-    /* Header */
-    header { position: fixed; width: 100%; background: #fff; padding: 20px 40px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
-    header .logo { font-weight: 700; font-size: 1.5rem; color: #1a73e8; }
-    header nav a { margin-left: 25px; font-weight: 500; transition: color 0.3s; }
-    header nav a:hover { color: #1a73e8; }
-
-    /* Hero */
-    .hero { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background: linear-gradient(135deg, #1a73e8, #4fa3f7); color: #fff; text-align: center; padding: 0 20px; }
-    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
-    .hero p { font-size: 1.25rem; max-width: 700px; margin-bottom: 30px; }
-    .hero a { background: #fff; color: #1a73e8; padding: 12px 28px; font-weight: 500; border-radius: 6px; transition: background 0.3s, color 0.3s; }
-    .hero a:hover { background: #e0e0e0; color: #1a73e8; }
-
-    /* Sections */
-    .section-title { text-align: center; margin-bottom: 40px; }
-    .content { max-width: 900px; margin: 0 auto; font-size: 1.1rem; color: #333; }
-
-    /* Two-column layout */
-    .two-columns { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: flex-start; }
-    .column { flex: 1 1 400px; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.3s; }
-    .column:hover { transform: translateY(-5px); }
-    .column h3 { margin-bottom: 15px; color: #1a73e8; }
-
-    /* Contact Form */
-    form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto; }
-    input, textarea { padding: 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; width: 100%; }
-    button { background: #1a73e8; color: #fff; border: none; padding: 12px; font-size: 1rem; font-weight: 500; border-radius: 6px; cursor: pointer; transition: background 0.3s; }
-    button:hover { background: #1664c1; }
-
-    /* Footer */
-    footer { background: #222; color: #fff; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
-    footer a { color: #1a73e8; }
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2.25rem; }
-      .hero p { font-size: 1rem; }
-      header nav a { margin-left: 15px; font-size: 0.95rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritability.com | Premium Digital Asset</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0c10; color: #e5e7eb; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .gradient-text { background: linear-gradient(90deg, #c5a059, #f9dfa5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+        .hero-bg { background: radial-gradient(circle at top right, #1a1d24, #0a0c10); }
+    </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">Inheritability.com</div>
-    <nav>
-      <a href="#legal">Legal / Estate</a>
-      <a href="#biology">Biology / Genetics</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Inheritability.com</h1>
-    <p>Premium domain for legal estate planning, financial services, and genetic research. Elevate your brand with a domain that communicates authority and credibility.</p>
-    <a href="#contact">Inquire Now</a>
-  </section>
-
-  <!-- Legal / Estate Planning Section -->
-  <section id="legal">
-    <h2 class="section-title">Legal & Estate Planning Branding</h2>
-    <div class="content">
-      <p><strong>Inheritability.com</strong> is a unique, high-value brandable domain perfectly suited for law firms, estate planners, financial advisors, and legal tech startups. It communicates authority, trust, and clarity in inheritance, wills, and estate management.</p>
-      <div class="two-columns">
-        <div class="column">
-          <h3>Commercial Appeal</h3>
-          <p>Targeted towards high-end law and financial service firms. Ideal for SEO, branding, and establishing trust with clients seeking estate planning solutions.</p>
+    <header class="py-6 px-8 border-b border-gray-800 sticky top-0 bg-black/80 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter">INHERITABILITY<span class="text-[#c5a059]">.COM</span></div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#sectors" class="hover:text-[#c5a059] transition">SECTORS</a>
+                <a href="#analysis" class="hover:text-[#c5a059] transition">MARKET DATA</a>
+                <a href="#valuation" class="hover:text-[#c5a059] transition">VALUATION</a>
+            </nav>
+            <a href="#inquiry" class="bg-[#c5a059] text-black px-6 py-2 rounded-sm font-bold text-sm hover:bg-[#b08d48] transition">ACQUIRE ASSET</a>
         </div>
-        <div class="column">
-          <h3>Brand Value</h3>
-          <p>One-word, professional, and easy to remember. Conveys expertise and niche authority instantly, making your firm stand out in a crowded legal market.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Biological / Genetics Section -->
-  <section id="biology" style="background:#eef5fb;">
-    <h2 class="section-title">Biological & Genetic Applications</h2>
-    <div class="content">
-      <p>Beyond legal branding, <strong>inheritability.com</strong> is relevant in genetics, biotechnology, and scientific research. It describes the capacity of traits or conditions to be passed from one generation to the next, making it ideal for genetic research platforms, educational portals, or bioinformatics startups.</p>
-      <div class="two-columns">
-        <div class="column">
-          <h3>Scientific Precision</h3>
-          <p>In genetics, the domain communicates exactness, reliability, and research credibility, connecting immediately with professional audiences in biology and medicine.</p>
+    <section class="hero-bg py-24 px-8 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-[#c5a059] font-semibold tracking-[0.2em] mb-4">PREMIUM CATEGORY DOMAIN</h2>
+            <h1 class="serif text-5xl md:text-7xl mb-6">Where Legacy Meets Future.</h1>
+            <p class="text-xl text-gray-400 mb-10 leading-relaxed">
+                A definitive digital asset at the intersection of <strong>Multigenerational Wealth</strong> and <strong>Biological Science</strong>. 
+                Own the term that defines the transfer of value across generations.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <div class="px-8 py-4 glass-card rounded-lg">
+                    <span class="block text-xs text-gray-500 uppercase tracking-widest">Primary Focus</span>
+                    <span class="text-lg font-semibold italic">Estate & Wealth Tech</span>
+                </div>
+                <div class="px-8 py-4 glass-card rounded-lg">
+                    <span class="block text-xs text-gray-500 uppercase tracking-widest">Secondary Focus</span>
+                    <span class="text-lg font-semibold italic">Genetics & Heredity</span>
+                </div>
+            </div>
         </div>
-        <div class="column">
-          <h3>Marketing Edge</h3>
-          <p>Perfect for biotech companies, medical research portals, and educational platforms. Makes complex concepts approachable while retaining authority.</p>
+    </section>
+
+    <section id="sectors" class="py-20 px-8 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="p-10 border-l-2 border-[#c5a059] bg-gradient-to-r from-white/5 to-transparent">
+                <h3 class="serif text-3xl mb-4">01. Legal & Financial</h3>
+                <p class="text-gray-400 mb-6 italic">"The capacity for assets and rights to be legally transferred."</p>
+                <ul class="space-y-3 text-sm">
+                    <li>• AI-Driven Estate Planning</li>
+                    <li>• Digital Asset Continuity</li>
+                    <li>• Multigenerational Trust Services</li>
+                    <li>• Family Office Management</li>
+                </ul>
+            </div>
+            <div class="p-10 border-l-2 border-blue-400 bg-gradient-to-r from-white/5 to-transparent">
+                <h3 class="serif text-3xl mb-4">02. Biological & Science</h3>
+                <p class="text-gray-400 mb-6 italic">"The genetic transmission of traits across generations."</p>
+                <ul class="space-y-3 text-sm">
+                    <li>• Genomic Health Diagnostics</li>
+                    <li>• Hereditary Trait Research</li>
+                    <li>• Longevity & Biotech SaaS</li>
+                    <li>• Ancestry & Genealogy Platforms</li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2 class="section-title">Contact & Inquiry</h2>
-    <div class="content">
-      <p>If you are interested in acquiring <strong>inheritability.com</strong> for your firm, research project, or brand, please reach out below. Serious inquiries only.</p>
-      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message / Inquiry" required></textarea>
-        <button type="submit">Send Inquiry</button>
-      </form>
-    </div>
-  </section>
+    <section id="analysis" class="py-20 bg-[#0f1115] px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="serif text-4xl mb-12 text-center">Strategic Market Positioning</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse glass-card">
+                    <thead>
+                        <tr class="border-b border-gray-800">
+                            <th class="p-6 text-gray-400 font-medium">Metric</th>
+                            <th class="p-6 text-gray-400 font-medium">Market Relevance</th>
+                            <th class="p-6 text-gray-400 font-medium">Growth Potential</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b border-gray-800">
+                            <td class="p-6 font-bold">The Great Wealth Transfer</td>
+                            <td class="p-6">Est. $68 Trillion passing to heirs by 2045</td>
+                            <td class="p-6 text-green-400">Critical / High</td>
+                        </tr>
+                        <tr class="border-b border-gray-800">
+                            <td class="p-6 font-bold">Search Intent</td>
+                            <td class="p-6">Exact Match Keyword for "Inheritability"</td>
+                            <td class="p-6 text-green-400">Institutional Authority</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-bold">Biotech Integration</td>
+                            <td class="p-6">Genomic sequencing market CAGR of 19%</td>
+                            <td class="p-6 text-green-400">Explosive</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2026 Inheritability.com. All Rights Reserved. | <a href="#contact">Contact</a>
-  </footer>
+    <section id="valuation" class="py-20 px-8 text-center max-w-4xl mx-auto">
+        <h2 class="serif text-4xl mb-6">Asset Evaluation</h2>
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="p-6 glass-card">
+                <div class="text-[#c5a059] text-2xl mb-2 font-bold">14</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500">Characters</div>
+            </div>
+            <div class="p-6 glass-card">
+                <div class="text-[#c5a059] text-2xl mb-2 font-bold">.COM</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500">Extension</div>
+            </div>
+            <div class="p-6 glass-card">
+                <div class="text-[#c5a059] text-2xl mb-2 font-bold">Dictionary</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500">Status</div>
+            </div>
+        </div>
+        <p class="text-gray-400 leading-relaxed mb-8">
+            The valuation of <strong>$75,000 USD</strong> is based on the scarcity of "Institutional Dictionary Domains" that bridge two trillion-dollar industries (Finance and Genetics). This is an "Appreciating Digital Land" asset.
+        </p>
+    </section>
+
+    <section id="inquiry" class="py-24 px-8 bg-white text-black">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="serif text-4xl mb-4 text-center">Acquisition Inquiry</h2>
+            <p class="text-center text-gray-600 mb-10">Direct communication for Principals, CEOs, or Authorized Brokers.</p>
+            <form action="#" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Your Name" class="w-full p-4 border border-gray-300 rounded focus:border-black outline-none">
+                    <input type="email" placeholder="Corporate Email" class="w-full p-4 border border-gray-300 rounded focus:border-black outline-none">
+                </div>
+                <input type="text" placeholder="Representing Company / Fund" class="w-full p-4 border border-gray-300 rounded focus:border-black outline-none">
+                <textarea rows="4" placeholder="Your Offer or Intent (Floor: $75,000 USD)" class="w-full p-4 border border-gray-300 rounded focus:border-black outline-none"></textarea>
+                <button class="w-full bg-black text-white font-bold py-5 rounded hover:bg-gray-900 transition uppercase tracking-widest">Submit Acquisition Proposal</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 px-8 border-t border-gray-800 text-center text-xs text-gray-500 tracking-[0.3em]">
+        <p>&copy; 2026 INHERITABILITY.COM | SECURED DIGITAL ASSET</p>
+        <p class="mt-4">TRANSFER VIA ESCROW.COM OR EQUIVALENT TRUSTED THIRD-PARTY</p>
+    </footer>
 
 </body>
-</html>
+  </html>
