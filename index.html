@@ -3,172 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inheritability.com | Institutional Digital Asset</title>
+    <title>Inheritability | Legal & Biological Legacy Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0c10; color: #e5e7eb; scroll-behavior: smooth; }
+        :root { --gold: #c5a059; --dark-bg: #0a0c10; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: #e5e7eb; scroll-behavior: smooth; }
         .serif { font-family: 'Playfair Display', serif; }
-        .accent-gold { color: #c5a059; }
-        .bg-gold { background-color: #c5a059; }
-        .glass-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
-        .border-gold { border-color: #c5a059; }
+        .accent-gold { color: var(--gold); }
+        .bg-gold { background-color: var(--gold); }
+        .glass { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); }
+        .nav-link:hover { color: var(--gold); }
+        .mobile-menu { transition: transform 0.3s ease-in-out; }
+        .hidden-menu { transform: translateX(100%); }
     </style>
 </head>
 <body>
 
-    <header class="py-6 px-8 border-b border-gray-800 sticky top-0 bg-black/90 z-50">
+    <nav class="fixed w-full z-50 glass border-b border-gray-800 py-4 px-6 md:px-12">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter italic serif underline decoration-[#c5a059]">INHERITABILITY<span class="accent-gold">.com</span></div>
-            <div class="flex gap-4">
-                <a href="https://wa.me/250788660513" class="hidden sm:flex items-center gap-2 border border-green-600 text-green-500 px-4 py-2 rounded text-xs font-bold hover:bg-green-600 hover:text-white transition">
-                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> WHATSAPP
-                </a>
-                <a href="#inquiry" class="bg-gold text-black px-6 py-2 rounded font-bold text-xs hover:opacity-90 transition">MAKE OFFER</a>
+            <div class="text-2xl font-bold tracking-tighter serif italic">INHERITABILITY<span class="accent-gold">.</span></div>
+            
+            <div class="hidden lg:flex space-x-8 text-xs font-bold tracking-widest uppercase text-gray-400">
+                <a href="#wealth" class="nav-link">Estate & Law</a>
+                <a href="#genetics" class="nav-link">Biotech</a>
+                <a href="#consultancy" class="nav-link">Consultancy</a>
+                <a href="#updates" class="nav-link">Market Updates</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/250788660513" class="hidden sm:block text-green-500 font-bold text-xs border border-green-900 px-4 py-2 rounded hover:bg-green-900 transition uppercase">WhatsApp</a>
+                <button id="menuBtn" class="lg:hidden text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <section class="py-24 px-8 text-center bg-[radial-gradient(circle_at_top,_#1a1d24_0%,_#0a0c10_100%)]">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="serif text-5xl md:text-7xl mb-6">A Tier-1 Digital Authority.</h1>
-            <p class="text-xl text-gray-400 mb-10 leading-relaxed font-light">
-                Bridging the multi-trillion dollar gap between <strong>Generational Wealth</strong> and <strong>Genomic Science</strong>. 
-                A 14-letter, dictionary-grade domain for institutional category leaders.
+    <div id="mobileOverlay" class="fixed inset-0 bg-black/95 z-[60] mobile-menu hidden-menu flex flex-col justify-center items-center space-y-8 text-2xl serif">
+        <button id="closeBtn" class="absolute top-8 right-8 text-gray-400">&times; Close</button>
+        <a href="#wealth" onclick="toggleMenu()">Estate & Law</a>
+        <a href="#genetics" onclick="toggleMenu()">Biotech & Genetics</a>
+        <a href="#consultancy" onclick="toggleMenu()">Consultancy</a>
+        <a href="https://wa.me/250788660513" class="accent-gold">Direct Contact</a>
+    </div>
+
+    <section class="relative min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80')] opacity-10 bg-cover bg-center"></div>
+        <div class="max-w-5xl text-center relative z-10">
+            <h2 class="text-xs font-black tracking-[0.5em] accent-gold uppercase mb-6">Unified Legacy Management</h2>
+            <h1 class="serif text-5xl md:text-8xl mb-8 leading-tight">Preserving Value.<br><span class="italic">Across Generations.</span></h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 font-light">
+                The global infrastructure for legal estate planning and biological heredity research. Protecting your wealth, your data, and your DNA.
             </p>
-        </div>
-    </section>
-
-    <section class="py-16 px-8 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="p-10 glass-card rounded-2xl border-t-4 border-gold">
-                <span class="accent-gold font-bold text-xs tracking-widest uppercase">Vertical Alpha</span>
-                <h2 class="serif text-3xl mt-4 mb-6 text-white">Legal, Estate & FinTech</h2>
-                <p class="text-gray-400 text-sm mb-8 leading-relaxed">Defining the infrastructure of the Great Wealth Transfer. This domain commands the market for automated inheritance, multi-generational trust management, and digital asset probate.</p>
-                <div class="grid grid-cols-2 gap-4 text-xs font-semibold text-gray-300">
-                    <div class="bg-white/5 p-3 rounded">• Wills & Probate SaaS</div>
-                    <div class="bg-white/5 p-3 rounded">• Family Office Tech</div>
-                    <div class="bg-white/5 p-3 rounded">• Asset Continuity</div>
-                    <div class="bg-white/5 p-3 rounded">• Wealth Transfer AI</div>
-                </div>
-            </div>
-
-            <div class="p-10 glass-card rounded-2xl border-t-4 border-blue-500">
-                <span class="text-blue-400 font-bold text-xs tracking-widest uppercase">Vertical Beta</span>
-                <h2 class="serif text-3xl mt-4 mb-6 text-white">Biotech & Genetics</h2>
-                <p class="text-gray-400 text-sm mb-8 leading-relaxed">In biological science, "Inheritability" is the fundamental metric of trait transmission. An essential brand for genomic sequencing, hereditary health diagnostics, and longevity research.</p>
-                <div class="grid grid-cols-2 gap-4 text-xs font-semibold text-gray-300">
-                    <div class="bg-white/5 p-3 rounded">• Genomic Mapping</div>
-                    <div class="bg-white/5 p-3 rounded">• Hereditary Diagnostics</div>
-                    <div class="bg-white/5 p-3 rounded">• Precision Medicine</div>
-                    <div class="bg-white/5 p-3 rounded">• Longevity SaaS</div>
-                </div>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#wealth" class="bg-gold text-black px-10 py-5 rounded-sm font-black uppercase tracking-widest hover:brightness-110 transition">Wealth & Law</a>
+                <a href="#genetics" class="border border-gray-700 px-10 py-5 rounded-sm font-black uppercase tracking-widest hover:bg-white hover:text-black transition">Genetics & Bio</a>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-black/60 px-8">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="serif text-4xl mb-4">Linguistic Asset Valuation</h2>
-            <p class="text-gray-500 mb-12 italic">Analysis of similar multi-syllabic dictionary domains with high-value suffixes (-ity, -ism, -ian).</p>
-            
-            <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse glass-card rounded-xl overflow-hidden">
-                    <thead class="bg-white/5 text-xs uppercase tracking-[0.2em] text-gray-400">
-                        <tr>
-                            <th class="p-6">Domain Asset</th>
-                            <th class="p-6">Characters</th>
-                            <th class="p-6">Sale Price / Value</th>
-                            <th class="p-6">Suffix Category</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-sm">
-                        <tr class="border-b border-gray-800 hover:bg-white/5 transition">
-                            <td class="p-6 font-bold">Sustainability.com</td>
-                            <td class="p-6">14</td>
-                            <td class="p-6 accent-gold font-mono">$800,000+</td>
-                            <td class="p-6 text-gray-500">-ITY (Industrial)</td>
-                        </tr>
-                        <tr class="border-b border-gray-800 hover:bg-white/5 transition">
-                            <td class="p-6 font-bold">Functionality.com</td>
-                            <td class="p-6">13</td>
-                            <td class="p-6 accent-gold font-mono">$150,000+</td>
-                            <td class="p-6 text-gray-500">-ITY (Tech)</td>
-                        </tr>
-                        <tr class="border-b border-gray-800 hover:bg-white/5 transition">
-                            <td class="p-6 font-bold">Personalism.com</td>
-                            <td class="p-6">12</td>
-                            <td class="p-6 accent-gold font-mono">$45,000</td>
-                            <td class="p-6 text-gray-500">-ISM (Philosophy)</td>
-                        </tr>
-                        <tr class="border-b border-gray-800 hover:bg-white/5 transition">
-                            <td class="p-6 font-bold">Technician.com</td>
-                            <td class="p-6">10</td>
-                            <td class="p-6 accent-gold font-mono">$125,000</td>
-                            <td class="p-6 text-gray-500">-IAN (Professional)</td>
-                        </tr>
-                        <tr class="border-b border-gray-800 hover:bg-white/5 transition">
-                            <td class="p-6 font-bold">Responsibility.com</td>
-                            <td class="p-6">14</td>
-                            <td class="p-6 accent-gold font-mono">High Six-Figures</td>
-                            <td class="p-6 text-gray-500">-ITY (ESG)</td>
-                        </tr>
-                        <tr class="bg-gold/10">
-                            <td class="p-6 font-black italic">Inheritability.com</td>
-                            <td class="p-6 font-bold">14</td>
-                            <td class="p-6 text-blue-400 font-bold">OFFERS INVITED</td>
-                            <td class="p-6 text-gray-400 italic">Core Utility</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <section id="wealth" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="accent-gold font-bold tracking-widest text-xs uppercase">01. Legal & Finance</span>
+                <h2 class="serif text-4xl md:text-5xl mt-4 mb-8">Estate Planning & Wealth Continuity</h2>
+                <div class="space-y-6 text-gray-400 leading-relaxed">
+                    <p>We provide the framework for the <strong>Great Wealth Transfer</strong>. From complex trusts to cross-border mediation, our legal-tech tools ensure your intentions are executed with precision.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="glass p-4 rounded-lg border-l-2 border-gold">
+                            <h4 class="text-white font-bold text-sm mb-1">Trusts & Wills</h4>
+                            <p class="text-xs">Dynamic legal structuring for global assets.</p>
+                        </div>
+                        <div class="glass p-4 rounded-lg border-l-2 border-gold">
+                            <h4 class="text-white font-bold text-sm mb-1">Mediation</h4>
+                            <p class="text-xs">Expert neutral analysis for heir conflict resolution.</p>
+                        </div>
+                        <div class="glass p-4 rounded-lg border-l-2 border-gold">
+                            <h4 class="text-white font-bold text-sm mb-1">Digital Probate</h4>
+                            <p class="text-xs">Ensuring the transfer of crypto and IP rights.</p>
+                        </div>
+                        <div class="glass p-4 rounded-lg border-l-2 border-gold">
+                            <h4 class="text-white font-bold text-sm mb-1">Tax Analysis</h4>
+                            <p class="text-xs">Real-time fiscal updates for estate preservation.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="mt-6 text-xs text-gray-500 text-center italic">Institutional buyers prioritize "Unbreakable Dictionary Keywords" over character length for authority and SEO domination.</p>
+            <div class="relative">
+                <div class="aspect-square rounded-full border border-gold/20 absolute -top-10 -right-10 animate-pulse w-64 h-64"></div>
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80" alt="Legal Consultation" class="rounded-2xl relative z-10 grayscale hover:grayscale-0 transition duration-700 shadow-2xl">
+            </div>
         </div>
     </section>
 
-    <section id="inquiry" class="py-24 px-8 max-w-4xl mx-auto">
-        <div class="glass-card p-12 rounded-3xl border border-gold/30">
-            <h2 class="serif text-4xl mb-4 text-center text-white">Strategic Acquisition</h2>
-            <p class="text-center text-gray-400 mb-12">Submit your interest to the EliJul Asset Management desk. All offers are evaluated based on industry relevance and historical comparable data.</p>
-            
-            <form id="offerForm" class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <input type="text" id="name" placeholder="Principal/Representative" required class="bg-white/5 border border-gray-800 p-4 rounded outline-none focus:border-gold transition">
-                    <input type="text" id="entity" placeholder="Organization / Fund" required class="bg-white/5 border border-gray-800 p-4 rounded outline-none focus:border-gold transition">
+    <section id="genetics" class="py-24 bg-black/40 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-blue-400 font-bold tracking-widest text-xs uppercase">02. Biological Science</span>
+                <h2 class="serif text-4xl md:text-5xl mt-4">Heredity & Genomic Intelligence</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-3xl hover:border-blue-500/50 transition">
+                    <div class="text-3xl mb-4">🧬</div>
+                    <h3 class="text-xl font-bold mb-4">Trait Analysis</h3>
+                    <p class="text-sm text-gray-500">Quantitative assessment of biological inheritability and genomic markers for future health planning.</p>
                 </div>
-                <input type="text" id="offer" placeholder="Proposed Acquisition Offer (USD)" class="bg-white/5 border border-gray-800 p-4 w-full rounded outline-none focus:border-gold transition font-mono">
-                <textarea id="intent" placeholder="Describe the strategic use case for this asset..." rows="4" class="bg-white/5 border border-gray-800 p-4 w-full rounded outline-none focus:border-gold transition"></textarea>
-                
-                <div class="flex flex-col gap-4 pt-4">
-                    <button type="submit" class="w-full bg-gold text-black font-black py-5 rounded-lg uppercase tracking-widest hover:brightness-110 transition">
-                        Submit Offer to sales@elijul.com
-                    </button>
-                    <a href="https://wa.me/250788660513" class="w-full border border-green-600 text-green-500 font-bold py-5 rounded-lg text-center uppercase tracking-widest hover:bg-green-600 hover:text-white transition">
-                        Direct Negotiation via WhatsApp
-                    </a>
+                <div class="glass p-8 rounded-3xl hover:border-blue-500/50 transition">
+                    <div class="text-3xl mb-4">🔬</div>
+                    <h3 class="text-xl font-bold mb-4">Diagnostic Updates</h3>
+                    <p class="text-sm text-gray-500">Regular scientific briefings on breakthroughs in hereditary medicine and longevity science.</p>
                 </div>
-            </form>
+                <div class="glass p-8 rounded-3xl hover:border-blue-500/50 transition">
+                    <div class="text-3xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold mb-4">Longevity Consulting</h3>
+                    <p class="text-sm text-gray-500">Bridging financial wealth with health duration to ensure a legacy that is both wealthy and healthy.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-gray-900 text-center text-[10px] text-gray-600 tracking-[0.4em] uppercase">
-        <p>© 2026 ELIJUL ASSET MANAGEMENT | INHERITABILITY.COM | ALL RIGHTS RESERVED</p>
+    <section id="consultancy" class="py-24 px-6 md:px-12 max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="serif text-4xl">Consultation & Strategy Desk</h2>
+            <p class="text-gray-500 mt-4 italic text-sm italic">Lawyers, Geneticists, and Financial Analysts at your disposal.</p>
+        </div>
+        <form id="mainForm" class="space-y-6 glass p-10 rounded-3xl">
+            <div class="grid md:grid-cols-2 gap-6">
+                <input type="text" id="name" placeholder="Full Name" required class="bg-white/5 border border-gray-800 p-4 rounded w-full outline-none focus:border-gold">
+                <input type="email" id="email" placeholder="Professional Email" required class="bg-white/5 border border-gray-800 p-4 rounded w-full outline-none focus:border-gold">
+            </div>
+            <select id="service" class="bg-white/5 border border-gray-800 p-4 rounded w-full outline-none focus:border-gold text-gray-400">
+                <option value="Legal/Estate">Legal & Estate Planning</option>
+                <option value="Wealth Transfer">Wealth Transfer & Mediation</option>
+                <option value="Biotech/Genetics">Biotech & Genetics Research</option>
+                <option value="Custom Analysis">Custom Interdisciplinary Analysis</option>
+            </select>
+            <textarea id="message" rows="5" placeholder="Details of your case or research inquiry..." class="bg-white/5 border border-gray-800 p-4 rounded w-full outline-none focus:border-gold"></textarea>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button type="submit" class="flex-1 bg-gold text-black py-5 rounded font-black uppercase tracking-widest hover:opacity-90 transition">Initialize Consultation</button>
+                <a href="https://wa.me/250788660513" class="flex-1 border-2 border-green-600 text-green-500 py-5 rounded font-black uppercase tracking-widest text-center hover:bg-green-600 hover:text-white transition">Direct WhatsApp</a>
+            </div>
+        </form>
+    </section>
+
+    <footer class="py-16 px-6 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-600 uppercase tracking-[0.4em]">
+            <div class="mb-4 md:mb-0">© 2026 INHERITABILITY™ | LEGACY ARCHITECTURE</div>
+            <div class="flex space-x-8">
+                <a href="#" class="hover:text-white transition">Privacy</a>
+                <a href="#" class="hover:text-white transition">Terms</a>
+                <a href="#" class="hover:text-white transition">Regulatory Compliance</a>
+            </div>
+        </div>
     </footer>
 
     <script>
-        document.getElementById('offerForm').addEventListener('submit', function(e) {
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const overlay = document.getElementById('mobileOverlay');
+
+        function toggleMenu() {
+            overlay.classList.toggle('hidden-menu');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+
+        document.getElementById('mainForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const name = document.getElementById('name').value;
-            const entity = document.getElementById('entity').value;
-            const offer = document.getElementById('offer').value;
-            const intent = document.getElementById('intent').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
             
-            const subject = encodeURIComponent(`Acquisition Offer: Inheritability.com [${entity}]`);
-            const body = encodeURIComponent(`Principal: ${name}\nOrganization: ${entity}\nOffer: ${offer}\n\nStrategic Intent:\n${intent}`);
+            const subject = encodeURIComponent(`Inheritability Inquiry: ${service}`);
+            const body = encodeURIComponent(`Client: ${name}\nRequested Service: ${service}\n\nDetails:\n${message}`);
             
             window.location.href = `mailto:sales@elijul.com?subject=${subject}&body=${body}`;
         });
     </script>
-
 </body>
 </html>
