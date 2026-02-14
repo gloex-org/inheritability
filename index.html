@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritability.com | Unified Legacy Management & Premium Assets</title>
+    
+    <meta name="description" content="Inheritability.com: Preserving wealth, genetic legacy, and premium digital assets across generations. Secure your brand and biological future.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --primary-blue: #0073e6;
+            --dark-navy: #0f172a;
+        }
+        body { font-family: 'Inter', sans-serif; background: #fdfdfd; scroll-behavior: smooth; }
+        
+        /* Inheritability Hero */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                        url('https://images.unsplash.com/photo-1567767293547-f07f17f2166f?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Glass Marketplace Header */
+        .heritage-market-header {
+            background: linear-gradient(90deg, #1e1b4b 0%, #0073e6 100%);
+            border-left: 5px solid #fbbf24;
+        }
+
+        /* Animations */
+        .ticker-anim { animation: marquee 35s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        
+        .service-card { transition: all 0.3s ease; border: 1px solid #f1f5f9; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+
+        .loader { border: 3px solid #f3f3f3; border-top: 3px solid var(--primary-blue); border-radius: 50%; width: 30px; height: 30px; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-[100] border-b border-slate-100 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black tracking-tighter text-slate-900">INHERITABILITY<span class="text-blue-600">.COM</span></a>
+            <div class="hidden md:flex gap-8 font-semibold text-sm">
+                <a href="#estate" class="hover:text-blue-600">Estate</a>
+                <a href="#bio" class="hover:text-blue-600">Biological</a>
+                <a href="#marketplace" class="text-blue-600 font-bold border-b-2 border-blue-600">Digital Assets</a>
+            </div>
+            <a href="#consult" class="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-blue-700 transition">Get Started</a>
+        </div>
+    </nav>
+
+    <header class="hero-section pt-40 pb-32 text-center text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <span class="uppercase tracking-[0.3em] text-blue-400 font-bold text-sm mb-4 block">Legacy Architecture</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">INHERITABILITY™</h1>
+            <p class="text-xl md:text-2xl text-slate-200 mb-10 leading-relaxed">Unified Legacy Management. Preserving Wealth, Genetic Assets, and Digital Identity Across Generations.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#estate" class="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold hover:bg-slate-100 transition">Explore Services</a>
+                <a href="#marketplace" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition">Digital Property</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="estate" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold mb-4">Estate & Legal Legacy</h2>
+            <div class="w-20 h-1.5 bg-blue-600 mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="service-card bg-white p-8 rounded-2xl">
+                <i class="fas fa-balance-scale text-3xl text-blue-600 mb-6"></i>
+                <h3 class="text-xl font-bold mb-3">Trust & Will Structuring</h3>
+                <p class="text-slate-600">Dynamic planning for global assets, ensuring smooth inheritance transitions.</p>
+            </div>
+            <div class="service-card bg-white p-8 rounded-2xl">
+                <i class="fas fa-file-signature text-3xl text-blue-600 mb-6"></i>
+                <h3 class="text-xl font-bold mb-3">Digital Probate</h3>
+                <p class="text-slate-600">Secure transfer of crypto, intellectual property, and online assets.</p>
+            </div>
+            <div class="service-card bg-white p-8 rounded-2xl">
+                <i class="fas fa-handshake text-3xl text-blue-600 mb-6"></i>
+                <h3 class="text-xl font-bold mb-3">Mediation</h3>
+                <p class="text-slate-600">Neutral expertise for high-value heir conflicts and estate disputes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bio" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4">Biological & Genetic Legacy</h2>
+                <div class="w-20 h-1.5 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <i class="fas fa-dna text-2xl text-blue-600 mb-4"></i>
+                    <h4 class="font-bold mb-2">Genome Analysis</h4>
+                    <p class="text-sm text-slate-500">Quantitative assessment of inheritable traits.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <i class="fas fa-microscope text-2xl text-blue-600 mb-4"></i>
+                    <h4 class="font-bold mb-2">Scientific Updates</h4>
+                    <p class="text-sm text-slate-500">Insights on hereditary medicine and longevity.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <i class="fas fa-heartbeat text-2xl text-blue-600 mb-4"></i>
+                    <h4 class="font-bold mb-2">Longevity Planning</h4>
+                    <p class="text-sm text-slate-500">Holistic health and wealth integration.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <i class="fas fa-user-md text-2xl text-blue-600 mb-4"></i>
+                    <h4 class="font-bold mb-2">Expert Consultation</h4>
+                    <p class="text-sm text-slate-500">Access to world-class geneticists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="marketplace" class="py-24 bg-slate-950 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="heritage-market-header p-10 rounded-3xl mb-12 relative">
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-5xl font-black mb-4">Acquire Digital Heritage</h2>
+                    <p class="text-blue-100 text-lg max-w-2xl italic font-medium">Curated premium domains and digital real estate assets from the Inheritability™ private portfolio.</p>
+                </div>
+                <i class="fa fa-crown absolute right-10 top-1/2 -translate-y-1/2 text-white/10 text-9xl"></i>
+            </div>
+
+            <div class="w-full bg-yellow-400 py-3 mb-12 rounded-xl overflow-hidden whitespace-nowrap">
+                <div class="ticker-anim inline-block font-black text-xs uppercase tracking-widest text-black">
+                    SECURE YOUR DIGITAL LEGACY TODAY • PREMIUM ONE-WORD ASSETS • FULL ESCROW PROTECTION • INSTANT TRANSFERS •
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <div class="relative max-w-3xl mx-auto mb-8">
+                    <i class="fa fa-search absolute left-6 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="searchInput" onkeyup="renderDomains()" 
+                           placeholder="Search premium assets (e.g. Finance, Bio, SaaS)..." 
+                           class="w-full pl-14 pr-6 py-5 rounded-2xl text-slate-900 focus:ring-4 focus:ring-blue-500/50 shadow-2xl text-lg">
+                </div>
+                
+                <div class="flex gap-3 overflow-x-auto pb-4 justify-center no-scrollbar">
+                    <button onclick="filterCategory('all')" class="bg-blue-600 text-white px-8 py-2 rounded-full font-bold text-sm">All Assets</button>
+                    <button onclick="filterCategory('featured')" class="bg-slate-800 hover:bg-slate-700 px-8 py-2 rounded-full font-bold text-sm transition">Featured</button>
+                    <button onclick="filterCategory('oneword')" class="bg-slate-800 hover:bg-slate-700 px-8 py-2 rounded-full font-bold text-sm transition">Dictionary</button>
+                </div>
+            </div>
+
+            <div id="loader" class="flex flex-col items-center justify-center py-20">
+                <div class="loader mb-4"></div>
+                <p class="text-slate-400 text-sm animate-pulse">Accessing Vault...</p>
+            </div>
+            
+            <div id="domain-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 hidden"></div>
+            
+            <div id="no-results" class="hidden text-center py-24">
+                <h3 class="text-xl font-bold">No assets found in current vault.</h3>
+                <p class="text-slate-500">Contact us for private acquisitions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-20">
+                <div class="bg-emerald-900/20 border-2 border-dashed border-emerald-500/50 p-10 rounded-3xl text-center">
+                    <i class="fab fa-whatsapp text-5xl text-emerald-500 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">Investor Insider Group</h3>
+                    <p class="text-slate-400 mb-8">Get instant alerts on private heritage domain drops and estate liquidations.</p>
+                    <a href="https://chat.whatsapp.com/EInlfUPDUCVJgtXCcTGLbQ" class="inline-block bg-emerald-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-emerald-600 transition">Join Community</a>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                        <h4 class="font-bold mb-2 flex items-center gap-2"><i class="fa fa-shield-halved text-blue-500"></i> Secure Transfer</h4>
+                        <p class="text-sm text-slate-400">All digital assets are transferred via Escrow.com or Namecheap Push to ensure 100% buyer protection.</p>
+                    </div>
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                        <h4 class="font-bold mb-2 flex items-center gap-2"><i class="fa fa-handshake text-blue-500"></i> Portfolio Bundling</h4>
+                        <p class="text-sm text-slate-400">Discounts are available for bulk acquisitions of 3+ assets for family office portfolios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="consult" class="py-24 max-w-3xl mx-auto px-6">
+        <div class="bg-blue-600 text-white p-12 rounded-[2rem] text-center mb-16 shadow-xl">
+            <h2 class="text-3xl font-extrabold mb-4">Secure Your Legacy</h2>
+            <p class="mb-8 text-blue-100">Consult with our heritage architects regarding legal, biological, or digital assets.</p>
+            <div class="flex justify-center gap-4">
+                <a href="mailto:sales@elijul.com" class="bg-white text-blue-600 px-6 py-3 rounded-xl font-bold">Email Inquiry</a>
+                <a href="https://wa.me/250788660513" class="bg-blue-800 text-white px-6 py-3 rounded-xl font-bold">WhatsApp</a>
+            </div>
+        </div>
+
+        <form action="mailto:sales@elijul.com" method="post" enctype="text/plain" class="bg-white p-10 rounded-3xl shadow-lg border border-slate-100">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <label class="block text-sm font-bold mb-2">Full Name</label>
+                    <input type="text" name="Name" required class="w-full p-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2">Professional Email</label>
+                    <input type="email" name="Email" required class="w-full p-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-blue-600">
+                </div>
+            </div>
+            <div class="mb-6">
+                <label class="block text-sm font-bold mb-2">Interest Area</label>
+                <textarea name="Message" rows="4" required class="w-full p-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-blue-600" placeholder="e.g. Genetic legacy, Digital domain acquisition, or Estate planning..."></textarea>
+            </div>
+            <button type="submit" class="w-full bg-slate-900 text-white py-5 rounded-2xl font-black text-lg hover:bg-black transition shadow-lg">Submit Request</button>
+        </form>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-500 py-16 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <h4 class="text-white font-bold mb-6">INHERITABILITY™</h4>
+                <p class="text-sm leading-relaxed">A specialized agency focused on the multi-generational preservation of biological, financial, and digital assets.</p>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h4 class="text-white font-bold mb-3">Resources</h4>
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+                <a href="#" class="hover:text-white transition">Regulatory Compliance</a>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Global Contact</h4>
+                <p class="text-sm">Inquiries: sales@elijul.com</p>
+                <div class="flex gap-4 mt-6 text-white">
+                    <i class="fab fa-linkedin text-xl cursor-pointer"></i>
+                    <i class="fab fa-twitter text-xl cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12 pt-8 border-t border-slate-900 text-[10px] uppercase tracking-widest">
+            &copy; 2026 Inheritability.com | Glancingly Brokerage. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        const API_BASE = "https://glancingly.pythonanywhere.com/api"; 
+        let allDomains = [];
+        let currentCategory = 'all';
+
+        async function fetchDomains() {
+            try {
+                const response = await fetch(`${API_BASE}/domains/`);
+                allDomains = await response.json();
+                document.getElementById('loader').classList.add('hidden');
+                document.getElementById('domain-grid').classList.remove('hidden');
+                renderDomains();
+            } catch (error) {
+                document.getElementById('loader').innerHTML = `<p class="text-red-500">Service temporarily unavailable. Contact support.</p>`;
+            }
+        }
+
+        function filterCategory(cat) {
+            currentCategory = cat;
+            renderDomains();
+        }
+
+        function renderDomains() {
+            const grid = document.getElementById('domain-grid');
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = allDomains.filter(d => {
+                const matchesSearch = d.domain_name.toLowerCase().includes(search) || d.description.toLowerCase().includes(search);
+                const matchesCat = currentCategory === 'all' || d.category === currentCategory;
+                return matchesSearch && matchesCat;
+            });
+
+            grid.innerHTML = '';
+            if (filtered.length === 0) {
+                document.getElementById('no-results').classList.remove('hidden');
+                return;
+            } else {
+                document.getElementById('no-results').classList.add('hidden');
+            }
+
+            filtered.forEach(d => {
+                const imgUrl = d.logo ? d.logo : `https://ui-avatars.com/api/?name=${d.domain_name}&background=random&size=256&bold=true`;
+                grid.innerHTML += `
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition duration-500 overflow-hidden flex flex-col">
+                    <div class="p-8 flex items-center gap-4">
+                        <img src="${imgUrl}" class="w-14 h-14 rounded-xl object-cover">
+                        <div>
+                            <h3 class="font-extrabold text-xl text-slate-900">${d.domain_name}</h3>
+                            <span class="text-[10px] font-black px-2 py-0.5 rounded bg-blue-50 text-blue-600 uppercase tracking-widest">${d.category}</span>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-4 flex-grow">
+                        <div class="text-2xl font-black text-emerald-600 mb-2">$${Number(d.price).toLocaleString()}</div>
+                        <p class="text-sm text-slate-500 line-clamp-2">${d.description}</p>
+                    </div>
+                    <div class="p-6 pt-0 mt-4 flex flex-col gap-2">
+                        <a href="${d.checkout_url}" target="_blank" class="w-full bg-slate-900 text-white text-center py-3 rounded-xl font-bold text-sm">Buy Now</a>
+                        <div class="flex gap-2">
+                            <a href="https://wa.me/${d.whatsapp_number}" class="flex-1 bg-emerald-500 text-white text-center py-2.5 rounded-xl text-xs font-bold">WhatsApp</a>
+                            <a href="mailto:${d.contact_email}" class="flex-1 bg-blue-600 text-white text-center py-2.5 rounded-xl text-xs font-bold">Email</a>
+                        </div>
+                    </div>
+                </div>`;
+            });
+        }
+
+        // Init
+        fetchDomains();
+    </script>
+</body>
+  </html>
